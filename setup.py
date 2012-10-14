@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='poke',
     version='0.1.0',
     description='Z',
@@ -10,7 +10,7 @@ setup(
     author_email='aes@nerdshack.com',
     license='bsd',
     # url='http://www.python.org/sigs/distutils-sig/',
-    packages=['poke'],
+    ext_modules=[setuptools.Extension('poke', ['poke.c'])],
     classifiers=[
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',
