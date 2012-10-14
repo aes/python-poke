@@ -13,9 +13,9 @@ setuptools.setup(
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: Artistic License',
         'Operating System :: OS Independent'],
-    # url='http://www.python.org/sigs/distutils-sig/',
+    url='https://github.com/aes/python-poke',
     ext_modules=[setuptools.Extension('poke', ['poke.c'])],
     test_suite="poke_test",
     )
